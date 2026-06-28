@@ -1,0 +1,326 @@
+/* =========================
+   CSS VARIABLES
+========================= */
+:root {
+    --primary-color: #0f4c81;      /* deep travel blue */
+    --secondary-color: #00b4d8;    /* sky blue */
+    --accent-color: #ff9f1c;       /* sunset orange */
+    --accent-light: #ffd166;       /* warm gold */
+    --text-color: #1f2937;         /* dark gray */
+    --light-text: #f8fafc;         /* white */
+    --bg-color: #eef6fb;           /* soft page background */
+    --card-bg: #ffffff;            /* white card */
+    --border-color: #c8dff0;
+    --shadow: 0 8px 20px rgba(15, 76, 129, 0.15);
+    --radius: 12px;
+    --transition: all 0.35s ease;
+}
+
+/* =========================
+   RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #eef6fb, #fdfcf7);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* =========================
+   HEADER
+========================= */
+header {
+    background: linear-gradient(135deg, rgba(15, 76, 129, 0.92), rgba(0, 180, 216, 0.82)),
+                url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--light-text);
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: var(--shadow);
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 18px;
+    margin-bottom: 18px;
+    color: #f1f5f9;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 14px;
+    border-radius: 25px;
+    transition: var(--transition);
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff8e7;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   MAIN
+========================= */
+main {
+    width: min(1200px, 92%);
+    margin: 30px auto;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+section {
+    background: var(--card-bg);
+    margin-bottom: 25px;
+    padding: 25px;
+    border-radius: var(--radius);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+section:hover {
+    transform: translateY(-3px);
+}
+
+section h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 28px;
+    border-left: 6px solid var(--accent-color);
+    padding-left: 12px;
+}
+
+section h3 {
+    color: #0f4c81;
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+
+section p {
+    margin-bottom: 10px;
+    color: #374151;
+}
+
+/* =========================
+   HOME SECTION
+========================= */
+#home {
+    background: linear-gradient(135deg, #f8fbff, #fffaf2);
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+#about ul {
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+#about li {
+    margin-bottom: 10px;
+    color: #374151;
+}
+
+/* =========================
+   PACKAGES TABLE
+========================= */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+th {
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 14px;
+    text-align: center;
+    font-size: 16px;
+}
+
+td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #dbe7f1;
+    color: #374151;
+    background-color: #ffffff;
+}
+
+tr:nth-child(even) td {
+    background-color: #f7fbff;
+}
+
+tr:hover td {
+    background-color: #fff4e6;
+    transition: 0.3s;
+}
+
+/* =========================
+   BOOKING FORM
+========================= */
+form {
+    margin-top: 10px;
+    background: linear-gradient(135deg, #f8fbff, #fffaf3);
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #d9e7f2;
+}
+
+label {
+    font-weight: bold;
+    color: #1f2937;
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 6px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #b7cfe3;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: var(--transition);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 8px rgba(0, 180, 216, 0.25);
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* =========================
+   BUTTON
+========================= */
+button {
+    background: linear-gradient(to right, var(--accent-color), var(--accent-light));
+    color: #222;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: var(--transition);
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 18px rgba(255, 159, 28, 0.35);
+}
+
+/* =========================
+   RULES SECTION
+========================= */
+#rules {
+    background: linear-gradient(135deg, #fefaf2, #f8fbff);
+}
+
+#rules ol {
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+#rules ul {
+    margin-left: 25px;
+}
+
+#rules li {
+    margin-bottom: 10px;
+    color: #374151;
+}
+
+#rules ul li {
+    list-style-type: square;
+    color: #0f4c81;
+    font-weight: 500;
+}
+
+#rules ol li {
+    color: #222;
+    font-weight: 500;
+}
+
+/* =========================
+   MEDIA SECTION
+========================= */
+#media video,
+#media audio,
+#media iframe {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    border: 3px solid #c8dff0;
+    border-radius: 10px;
+    max-width: 100%;
+    box-shadow: 0 4px 12px rgba(15, 76, 129, 0.12);
+}
+
+/* =========================
+   CONTACT SECTION
+========================= */
+#contact {
+    background: linear-gradient(135deg, #f8fbff, #fffaf3);
+}
+
+#contact p {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+#contact strong {
+    color: var(--primary-color);
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 20px;
+    font-size: 16px;
+}
