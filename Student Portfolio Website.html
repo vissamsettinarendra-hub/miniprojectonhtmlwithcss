@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio</title>
+    <link rel="stylesheet" href="Student Portfolio Website.css">
+</head>
+<body>
+
+    <header>
+        <h1>Vissamsetti Narendra</h1>
+        <p>Aspiring Full Stack Developer</p>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="home">
+            <h2>Welcome</h2>
+            <p>
+                Welcome to my personal portfolio website. Here you can learn about my
+                education, skills, projects, and contact details.
+            </p>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Hello! I am <strong>Vissamsetti Narendra</strong>, a student passionate about
+                web development, programming, and software development.
+                I enjoy learning new technologies and building useful projects.
+            </p>
+
+            <h3>Career Goals</h3>
+            <p>
+                My goal is to become a successful Full Stack Developer / Software Engineer
+                and build real-world applications that solve practical problems.
+            </p>
+
+            <h3>Interests</h3>
+            <p>
+                Web Development, Python Programming, JavaScript, Problem Solving,
+                and learning new tools in software development.
+            </p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <table>
+                <tr>
+                    <th>Qualification</th>
+                    <th>Institution</th>
+                    <th>Board/University</th>
+                    <th>Year</th>
+                    <th>Percentage/CGPA</th>
+                </tr>
+
+                <tr>
+                    <td>B.Tech</td>
+                    <td>XYZ Engineering College</td>
+                    <td>JNTU</td>
+                    <td>2022 - 2026</td>
+                    <td>8.2 CGPA</td>
+                </tr>
+
+                <tr>
+                    <td>Intermediate</td>
+                    <td>ABC Junior College</td>
+                    <td>Board of Intermediate Education</td>
+                    <td>2020 - 2022</td>
+                    <td>92%</td>
+                </tr>
+
+                <tr>
+                    <td>SSC</td>
+                    <td>DEF High School</td>
+                    <td>Board of Secondary Education</td>
+                    <td>2020</td>
+                    <td>95%</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>SQL</li>
+                <li>Git & GitHub</li>
+                <li>Problem Solving</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <div class="project-box">
+                <h3>Student Registration Form</h3>
+                <p><strong>Tech Used:</strong> HTML</p>
+                <p>
+                    Created a student registration form using HTML form elements such as
+                    input fields, radio buttons, checkboxes, select options, and submit buttons.
+                </p>
+            </div>
+
+            <div class="project-box">
+                <h3>Personal Portfolio Website</h3>
+                <p><strong>Tech Used:</strong> HTML</p>
+                <p>
+                    Developed a personal portfolio website containing details about education,
+                    skills, projects, and contact information using semantic HTML tags.
+                </p>
+            </div>
+
+            <div class="project-box">
+                <h3>Login Page Design</h3>
+                <p><strong>Tech Used:</strong> HTML, CSS</p>
+                <p>
+                    Built a login page with email/mobile input, password field, login button,
+                    forgotten password link, and create account button.
+                </p>
+            </div>
+        </section>
+
+        <section id="resume">
+            <h2>Resume Upload</h2>
+
+            <form>
+                <label for="rname">Full Name:</label><br><br>
+                <input type="text" id="rname" name="rname" required><br><br>
+
+                <label for="remail">Email:</label><br><br>
+                <input type="email" id="remail" name="remail" required><br><br>
+
+                <label for="rphone">Phone Number:</label><br><br>
+                <input type="tel" id="rphone" name="rphone" pattern="[0-9]{10}" required><br><br>
+
+                <label for="resumeFile">Upload Resume:</label><br><br>
+                <input type="file" id="resumeFile" name="resumeFile" required><br><br>
+
+                <button type="submit">Submit Resume</button>
+            </form>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <form>
+                <label for="cname">Name:</label><br><br>
+                <input type="text" id="cname" name="cname" required><br><br>
+
+                <label for="cemail">Email:</label><br><br>
+                <input type="email" id="cemail" name="cemail" required><br><br>
+
+                <label for="subject">Subject:</label><br><br>
+                <input type="text" id="subject" name="subject" required><br><br>
+
+                <label for="message">Message:</label><br><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Vissamsetti Narendra | Student Portfolio</p>
+    </footer>
+
+</body>
+</html>
